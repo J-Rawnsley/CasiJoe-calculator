@@ -1,0 +1,104 @@
+
+
+/* CSS for calculator container */
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  width: 300px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+/* CSS for calculator display area */
+.display {
+  color:rgb(48, 203, 48);
+  font-family: 'Tektur', 'Courier New', Courier, monospace;
+  grid-column: span 4;
+  background-color: #000;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  padding: 10px;
+  text-align: right;
+}
+
+/* CSS for calculator buttons */
+
+.buttonsContainer {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.buttons {
+  display: inline-grid;
+  grid-gap: 10px;
+}
+
+#numberButtons {
+  grid-column: span 3;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#operatorButtons {
+  grid-column: span 1;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
+
+/* Style for number and operator buttons */
+.button {
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.equals {
+  background-color: #c8f8ff;
+  color: #000;
+}
+
+.equals:hover {
+  background-color: #e8fcff;
+}
+
+/* Assuming 'clear' button has the class 'clear' */
+.clear {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.clear:hover {
+  background-color: #ff6659;
+}
+
+.operator {
+  background-color: rgb(13, 29, 199);
+  color: #fff;
+}
+
+.operator:hover {
+  background-color: rgba(13, 28, 199, 0.689);
+}
+
+.brandName {
+  grid-column: span 4;
+  text-align: right;
+  width: 100%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: darkblue;
+  font-size: 20pt;
+}
+
+.equals:active, .clear:active, .operator:active {
+  background-color: rgb(255, 255, 255);
+}
