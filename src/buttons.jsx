@@ -1,3 +1,5 @@
+// below are three data arrays defining the buttons that will go into the three button sections of the calculator module. The order of button objects in these arrays determines the layout of buttons in the user interface. They are exported and imported by "calculator.jsx"
+
 const numberButtons = [
   {
     id: "7",
