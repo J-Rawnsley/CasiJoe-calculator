@@ -20,7 +20,7 @@ function Calculator() {
         <button
           key={buttonID.id}
           id={buttonID.id}
-          className={buttonID.class}
+          className={buttonID.class + " button"}
           onClick={() => {
             setMainDisplay(handleClick(buttonID.id));
           }}
@@ -46,8 +46,10 @@ function Calculator() {
       <div className="buttonsContainer">
         <ButtonSection buttonData={numberButtons} id="numberButtons" />
         <ButtonSection buttonData={operatorButtons} id="operatorButtons" />
-        <ButtonSection buttonData={clearButtons} id="clearButtons" />
+        <ButtonSection buttonData={clearButtons} id="clearButtons" /> 
+        <p id="tag">Immediate Logic 3000</p>
       </div>
+      
     </div>
   );
 }

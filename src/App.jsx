@@ -1,12 +1,11 @@
 import Calculator from "./calculator";
 import "./App.css";
 
-// main app. Currently contains a single instance of the "calculator" module only
-
 function App() {
   return (
     <>
       <Calculator />
+      <p>By Joseph Rawnsley. Code on <a href="https://github.com/J-Rawnsley/CasiJoe-calculator">GitHub</a></p>
     </>
   );
 }
