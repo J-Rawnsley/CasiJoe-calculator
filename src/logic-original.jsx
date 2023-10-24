@@ -1,3 +1,6 @@
+// original logic file. Replaced with new logic file. This file is not currently used.
+
+
 let displayVal = 0;
 let storedVal = 0;
 let currentOperation = (a, b) => b;

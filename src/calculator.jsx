@@ -20,8 +20,8 @@ function Calculator() {
   const Button = (buttonID) => {
     // Creates a jsx element with a unique id and class based on the button type for each button
     return (
-      <>
         <button
+          key={buttonID.id}
           id={buttonID.id}
           className={buttonID.class}
           // gives each button the ability to update the calculator's display screen by calling the imported "handleClick" function.
@@ -32,7 +32,6 @@ function Calculator() {
           {/* displays the name/symbol for each button on the user interface */}
           {buttonID.name}
         </button>
-      </>
     );
   };
   // creates a button section. The calulator will contain three button sections: numbers, operators and clear. These sections are separated for the purpose of layout/styling rather than calculator logic
